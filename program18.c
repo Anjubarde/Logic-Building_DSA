@@ -10,18 +10,19 @@
 
 void DisplayResult(float fPercentage)
 {
-    if(fPercentage > 100.0f || fPercentage < 0.0f)                         //Filter 
+    if(fPercentage < 0.0f || fPercentage > 100.0f )    // Filter
     {
-        printf("Invalid Prcentage, Please enter in the range 0 to 100\n");
+        printf("Invalid percentage. Please enter the value in the range 0 to 100\n");
         return;
     }
-    if(fPercentage >= 40.00f)                       // Condition 
+
+    if(fPercentage >= 40.00f)
     {
         printf("You are PASS\n");
     }
     else
     {
-        printf("You are FAIL");
+        printf("You are FAIL\n");
     }
 }
 

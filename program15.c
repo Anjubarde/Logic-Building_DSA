@@ -16,7 +16,7 @@ void DisplayResult(float fPercentage)
     }
     else
     {
-        printf("You are FAIL");
+        printf("You are FAIL\n");
     }
 }
 

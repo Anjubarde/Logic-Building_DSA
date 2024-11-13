@@ -12,7 +12,7 @@
 float CalculatePercentage(int iObtained, int iTotal)
 {
     float fPercentage  = 0.0f;
-    fPercentage = (iObtained / iTotal) * 100;
+    fPercentage = ((float)iObtained / (float)iTotal) * 100;
     return fPercentage;  
 }
 
