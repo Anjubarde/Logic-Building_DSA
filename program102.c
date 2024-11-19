@@ -1,17 +1,16 @@
-// Input : 5
-// Output : 1 * 2 * 3 * 4 * 5 *  
+// Input - 2
+// Output - 
+// *
+// *
 
 #include<stdio.h>
-
 void Display(int iNo)
 {
     int iCnt = 0;
-
-    for(iCnt = 1; iCnt <= iNo; iCnt++) // Pattern Printig inicialization is always 1  
+    for(iCnt = 1; iCnt <= iNo ; iCnt++)
     {
-        printf("%d\t""*\t",iCnt);
+        printf("*\n");
     }
-    printf("\n");
 }
 
 int main()
@@ -22,5 +21,6 @@ int main()
     scanf("%d",&iValue);
 
     Display(iValue);
+
     return 0;
 }

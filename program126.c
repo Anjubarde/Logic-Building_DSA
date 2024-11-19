@@ -1,15 +1,15 @@
 // Input : 5
-// Output : 1 * 2 * 3 * 4 * 5 *  
+// Output : a   b   c   d   e
 
 #include<stdio.h>
 
 void Display(int iNo)
 {
     int iCnt = 0;
-
-    for(iCnt = 1; iCnt <= iNo; iCnt++) // Pattern Printig inicialization is always 1  
+    char ch = '\0';
+    for(iCnt = 1, ch = 'a'; iCnt <= iNo; iCnt++, ch++)
     {
-        printf("%d\t""*\t",iCnt);
+        printf("%c\t",ch);   
     }
     printf("\n");
 }
@@ -18,9 +18,10 @@ int main()
 {
     int iValue = 0;
 
-    printf("Enter the number : \n");
+    printf("Enter Number : \n");
     scanf("%d",&iValue);
 
     Display(iValue);
+
     return 0;
 }
