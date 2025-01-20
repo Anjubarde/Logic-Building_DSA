@@ -6,10 +6,11 @@
 void Display(int iNo)
 {
     int iCnt = 0;
-    char ch = 97; // dont use ascii value in program it cause loss readablity of code 
+    char ch = 97;
+
     for(iCnt = 1, ch = 'a'; iCnt <= iNo; iCnt++, ch++)
     {
-        printf("%c\t",ch);   
+        printf("%c\t",ch);
     }
     printf("\n");
 }
@@ -18,7 +19,7 @@ int main()
 {
     int iValue = 0;
 
-    printf("Enter Number : \n");
+    printf("Enter number : \n");
     scanf("%d",&iValue);
 
     Display(iValue);

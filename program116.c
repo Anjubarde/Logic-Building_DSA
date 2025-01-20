@@ -1,32 +1,32 @@
-// Row = 5
-// Column = 4
+// Row = 4
+// Col = 3
+
+/*
+    *   *   *
+    *   *   *
+    *   *   *
+    *   *   *
+*/
 
 #include<stdio.h>
-void Display(int iRow, int iCol)
+
+void Display()
 {
     int i = 0, j = 0;
-    //    1       2        3
-    for(i = 1; i <= iRow; i++)     // Outer (Rows)
+
+    for(i = 1; i<=4; i++)
     {
-        //    1        2       3
-        for(j = 1; j <= iCol; j++) // Inner (Columns)
+        for(j =1; j <= 3; j++)
         {
-            printf("*\t");         // 4
+            printf("*\t");
         }
         printf("\n");
-    } 
+    }
 }
+
 int main()
 {
-    int iValue1 = 0, iValue2 = 0;
-
-    printf("Enter the number of row : \n");
-    scanf("%d",&iValue1);
-
-    printf("Enter the number of colum : \n");
-    scanf("%d",&iValue2);
-
-    Display(iValue1, iValue2);
+    Display();
 
     return 0;
 }

@@ -7,9 +7,10 @@ void Display(int iNo)
 {
     int iCnt = 0;
     char ch = '\0';
+    //          1                 2            3 
     for(iCnt = 1, ch = 'a'; iCnt <= iNo; iCnt++, ch++)
     {
-        printf("%c\t",ch);   
+        printf("%c\t",ch);  // 4
     }
     printf("\n");
 }
@@ -18,7 +19,7 @@ int main()
 {
     int iValue = 0;
 
-    printf("Enter Number : \n");
+    printf("Enter number : \n");
     scanf("%d",&iValue);
 
     Display(iValue);

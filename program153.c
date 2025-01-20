@@ -6,7 +6,7 @@ int Count(char *ptr)
 
     while(*ptr != '\0')
     {
-        if(*ptr == 'a');
+        if(*ptr == 'a')
         {
             iCount++;
         }
@@ -17,15 +17,15 @@ int Count(char *ptr)
 
 int main()
 {
-    char Arr[30]; 
+    char Arr[30];
     int iRet = 0;
 
-    printf("Enter String : \n");                   
-    scanf("%[^'\n']s",Arr);  
+    printf("Enter string : \n");
+    scanf("%[^'\n']s",Arr);
 
-    iRet = Count(Arr);
+    iRet = Count(Arr);   // Display(100);
 
-    printf("Count of a is : %d\n",iRet);
+    printf("count of a is : %d\n",iRet);
 
     return 0;
 }

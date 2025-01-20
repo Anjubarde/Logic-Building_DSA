@@ -11,12 +11,12 @@ void Display(char *ptr)
 
 int main()
 {
-    char Arr[30]; 
+    char Arr[30];
 
-    printf("Enter String : \n");                   
-    scanf("%[^'\n']s",Arr);  
+    printf("Enter string : \n");
+    scanf("%[^'\n']s",Arr);
 
-    Display(Arr);
+    Display(Arr);   // Display(100);
 
     return 0;
 }
